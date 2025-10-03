@@ -1,5 +1,11 @@
 # Apple Retail Sales Data Analytics Using SQL  
 
+## Dataset  
+The dataset used for this project can be accessed here:  
+
+[Download Dataset](https://drive.google.com/drive/folders/1ZF8zwMrcFFrbotnHBTc3FmXF_BhBxeGu?usp=drive_link)  
+
+
 ## Table of Contents
 - [Abstract](#abstract)
 - [Project Overview](#project-overview)
