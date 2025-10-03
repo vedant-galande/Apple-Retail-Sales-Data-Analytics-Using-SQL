@@ -34,23 +34,39 @@ This project focuses on:
 
 ---
 
-## Database Schema  
-The project uses five main tables:  
+## Database Schema  ## Database Schema  
 
-1. **stores** – Apple retail store details  
-   - `store_id`, `store_name`, `city`, `country`  
+The project is built on a **relational database schema** with five tables:  
 
-2. **category** – Product categories  
-   - `category_id`, `category_name`  
+1. **stores** – Contains details about Apple retail stores  
+   - `store_id`: Unique identifier for each store  
+   - `store_name`: Name of the store  
+   - `city`: City where the store is located  
+   - `country`: Country of the store  
 
-3. **products** – Product details  
-   - `product_id`, `product_name`, `category_id`, `launch_date`, `price`  
+2. **category** – Holds product category information  
+   - `category_id`: Unique identifier for each category  
+   - `category_name`: Name of the category  
 
-4. **sales** – Sales transactions  
-   - `sale_id`, `sale_date`, `store_id`, `product_id`, `quantity`  
+3. **products** – Details about Apple products  
+   - `product_id`: Unique identifier for each product  
+   - `product_name`: Name of the product  
+   - `category_id`: Foreign key referencing the `category` table  
+   - `launch_date`: Date when the product was launched  
+   - `price`: Price of the product  
 
-5. **warranty** – Warranty claims  
-   - `claim_id`, `claim_date`, `sale_id`, `repair_status`  
+4. **sales** – Records sales transactions  
+   - `sale_id`: Unique identifier for each sale  
+   - `sale_date`: Date of the sale  
+   - `store_id`: Foreign key referencing the `stores` table  
+   - `product_id`: Foreign key referencing the `products` table  
+   - `quantity`: Number of units sold  
+
+5. **warranty** – Tracks warranty claims  
+   - `claim_id`: Unique identifier for each warranty claim  
+   - `claim_date`: Date the claim was made  
+   - `sale_id`: Foreign key referencing the `sales` table  
+   - `repair_status`: Status of the claim (e.g., *Paid Repaired*, *Warranty Void*)  
 
 ---
 
