@@ -1,6 +1,6 @@
 # Apple Retail Sales Data Analytics Using SQL  
 
-## 📑 Table of Contents
+## Table of Contents
 - [Abstract](#abstract)
 - [Project Overview](#project-overview)
 - [Key Features](#key-features)
@@ -83,8 +83,6 @@ The project is built on a **relational database schema** with five tables:
 3. **`sales(sale_date)`** – Date-based analysis  
    - Execution time reduced: **120.79 ms → 0.87 ms**  
    - Planning time: **0.93 ms → 1.44 ms**  
-
-⚡ These optimizations achieved up to **139x faster execution**, making analysis on 1M+ rows highly efficient.  
 
 ---
 
