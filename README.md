@@ -34,7 +34,7 @@ This project focuses on:
 
 ---
 
-## Database Schema  ## Database Schema  
+## Database Schema  
 
 The project is built on a **relational database schema** with five tables:  
 
